@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media queries</title>
+    <link rel="shortcut icon" href="./favicon/icons8-resume-100.png">
+    <style>
+        .all{
+            display: grid;
+            grid-template-columns: 440px 870px;
+            grid-template-rows: 600px 600px;
+            gap: 15px;
+        }
+        .exp1{
+            height: 1210px;
+            width: 440px;
+            background-color: grey;
+            border: 2px solid black;
+            box-shadow: 4px 4px 4px white;
+        }
+        @media screen and (max-width:400px){
+            .all{
+                display: flex;
+                flex-direction: column;
+            }
+            .exp1{
+                width: 200px;
+            }
+        }
+        .exp12{
+            position: relative;
+            top: 0px;
+        }
+        .jane{
+            position: absolute;
+            top: 240px;
+            left: 30px;
+            font-size: 30px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+        .imgexp1{
+            height: 300px;
+            width: 440px;
+        }
+        @media screen and (max-width: 480px) {
+            .imgexp1 {
+                height: 100px;
+                width: 200px;
+            }
+        }
+        
+        .exp2{
+            width: 870px;
+            background-color: grey;
+        }
+        @media screen and (max-width: 480px) {
+            .exp2 {
+                display:inline-block;
+                margin-bottom: 50px;
+                height: 100px;
+                width: 200px;
+            }
+        }
+        .exp3{
+            margin-left: 455px;
+            width: 870px;
+            background-color: grey;
+        }
+        @media screen and (max-width: 480px) {
+            .exp3 {
+                display:block;
+                height: 100px;
+                width: 200px;
+            }
+        }
+        .foot{
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #12B886;
+            width: 100%;
+            height: 150px;
+            margin-bottom: 0px;
+        }
+        @media screen and (max-width: 480px) {
+            .foot {
+                display: inline-block;
+                margin-top: 850px;
+                height: 200px;
+                width: 300px;
+            }
+        }
+        .foot1{
+            display: inline-block;
+            margin-left: 45%;
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <div class="exp1">
+            <div class="exp12">
+                <img src="./images/avatar_hat (1).jpg" alt="" class="imgexp1">
+                <span class="jane">Jane Doe</span>
+            </div>
+            <img style="display:inline-block;margin-left: 17px;margin-top:17px" src="./favicon/icons8-suitcase-64 (1).png" alt="" width="22px" height="22px">
+            <span style="display:inline-block;margin-left:10px;font-size:18px">Designer</span> <br>
+            <img style="display:inline-block;margin-left: 17px;margin-top:17px" src="./favicon/icons8-home-64.png" alt="" width="20px" height="20px">
+            <span style="display:inline-block;margin-left:10px;font-size:18px">London, UK</span> <br>
+            <img style="display:inline-block;margin-left: 17px;margin-top:17px" src="./favicon/icons8-mail-50.png" alt="" width="22px" height="22px">
+            <span style="display:inline-block;margin-left:10px;font-size:18px">ex@mail.com</span> <br>
+            <img style="display:inline-block;margin-left: 17px;margin-top:17px" src="./favicon/icons8-phone-30.png" alt="" width="20px" height="20px">
+            <span style="display:inline-block;margin-left:10px;font-size:18px;margin-bottom:20px">1224435534</span> <br>
+            <hr style="width: 95%;">
+            <img style="display:inline-block;margin-left: 17px;margin-top:17px" src="./favicon/icons8-starburst-shape-50.png" alt="" width="20px" height="20px">
+            <span style="display:inline-block;margin-left:10px;font-size:20px;margin-bottom:20px;">Skills</span> <br>
+            <span style="display:inline-block;margin-left:15px;font-size:18px;margin-bottom:20px">Adobe Photoshop</span> <br>
+            <div style="display: inline-block;margin-left:15px;width:90%;height:18px;background-color:white;
+            border:2px solid black;border-radius:10px">
+                <div style="display: inline-block;border-radius:10px;background-color:#12B886;
+                width:90%;height:18px">
+                    <span style="color:white;display:inline-block;margin-left:48%">90%</span>
+                </div>
+            </div>
+            <span style="display:inline-block;margin-left:15px;font-size:18px;margin-bottom:20px;margin-top:20px">Photography</span> <br>
+            <div style="display: inline-block;margin-left:15px;width:90%;height:18px;background-color:white;
+            border:2px solid black;border-radius:10px">
+                <div style="display: inline-block;border-radius:10px;background-color:#12B886;
+                width:80%;height:18px">
+                    <span style="color:white;display:inline-block;margin-left:42%">80%</span>
+                </div>
+            </div>
+            <span style="display:inline-block;margin-left:15px;font-size:18px;margin-bottom:20px;margin-top:20px">Illustrator</span> <br>
+            <div style="display: inline-block;margin-left:15px;width:90%;height:18px;background-color:white;
+            border:2px solid black;border-radius:10px">
+                <div style="display: inline-block;border-radius:10px;background-color:#12B886;
+                width:75%;height:18px">
+                    <span style="color:white;display:inline-block;margin-left:37%">75%</span>
+                </div>
+            </div>
+            <span style="display:inline-block;margin-left:15px;font-size:18px;margin-bottom:20px;margin-top:20px">Media</span> <br>
+            <div style="display: inline-block;margin-left:15px;width:90%;height:18px;background-color:white;
+            border:2px solid black;border-radius:10px">
+                <div style="display: inline-block;border-radius:10px;background-color:#12B886;
+                width:50%;height:18px">
+                    <span style="color:white;display:inline-block;margin-left:33%">50%</span>
+                </div>
+            </div>
+            <img style="display:inline-block;margin-left: 17px;margin-top:20px" src="./favicon/icons8-globe-50.png" alt="" width="20px" height="20px">
+            <span style="display:inline-block;margin-left:10px;font-size:20px;margin-bottom:20px;">Languages</span> <br>
+            <span style="display:inline-block;margin-left:15px;font-size:18px;margin-bottom:20px">Adobe Photoshop</span> <br>
+            <div style="display: inline-block;margin-left:15px;width:90%;height:22px;background-color:white;
+            border:2px solid black;border-radius:12px">
+                <div style="display: inline-block;border-radius:12px;background-color:#12B886;
+                width:90%;height:22px">
+                    <span style="color:white;display:inline-block;margin-left:48%">90%</span>
+                </div>
+            </div>
+            <span style="display:inline-block;margin-left:15px;font-size:18px;margin-bottom:20px;margin-top:20px">Photography</span> <br>
+            <div style="display: inline-block;margin-left:15px;width:90%;height:22px;background-color:white;
+            border:2px solid black;border-radius:12px">
+                <div style="display: inline-block;border-radius:12px;background-color:#12B886;
+                width:80%;height:22px">
+                    <span style="color:white;display:inline-block;margin-left:42%">80%</span>
+                </div>
+            </div>
+            <span style="display:inline-block;margin-left:15px;font-size:18px;margin-bottom:20px;margin-top:20px">Illustrator</span> <br>
+            <div style="display: inline-block;margin-left:15px;width:90%;height:22px;background-color:white;
+            border:2px solid black;border-radius:12px">
+                <div style="display: inline-block;border-radius:12px;background-color:#12B886;
+                width:75%;height:22px">
+                    <span style="color:white;display:inline-block;margin-left:37%">75%</span>
+                </div>
+            </div>
+        </div>
+        <div class="exp2">
+            <img style="display:inline-block;margin-left: 17px;margin-top:17px" src="./favicon/icons8-suitcase-64 (1).png" alt="" width="38px" height="38px">
+            <span style="display:inline-block;margin-left:10px;font-size:38px">Work Experience</span> <br>
+            <span style="display:inline-block;margin-left:30px;font-size:20px;margin-bottom:20px;
+            margin-top:30px">Front End Developer / w3schools.com</span> <br>
+            <img style="display:inline-block;margin-left: 17px;margin-top:0px" src="./favicon/icons8-business-64.png" alt="" width="20px" height="20px">
+            <span style="display:inline-block;margin-left:10px;font-size:20px;color:#12B886">Jan 2015 - <span 
+                style="color:white;background-color:#12B886;padding:5px;border-radius: 8px;
+                display:inline-block;margin-top:2px">Current</span></span> <br>
+            <p style="display:inline-block;margin-left:25px">Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. <br>
+                Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+            <hr style="width: 95%;">
+            <span style="display:inline-block;margin-left:30px;font-size:20px;margin-bottom:20px;
+            margin-top:30px">Web Developer / something.com</span> <br>
+            <img style="display:inline-block;margin-left: 17px;margin-top:0px" src="./favicon/icons8-business-64.png" alt="" width="20px" height="20px">
+            <span style="display:inline-block;margin-left:10px;font-size:20px;color:#12B886">Mar 2012 - Dec 2014</span> <br>
+            <p style="display:inline-block;margin-left:25px">Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. <br>
+            Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste. </p>
+            <hr style="width: 95%;">
+            <span style="display:inline-block;margin-left:30px;font-size:20px;margin-bottom:20px;
+            margin-top:30px">Graphic Designer / designsomething.com</span> <br>
+            <img style="display:inline-block;margin-left: 17px;margin-top:0px" src="./favicon/icons8-business-64.png" alt="" width="20px" height="20px">
+            <span style="display:inline-block;margin-left:10px;font-size:20px;color:#12B886">Jun 2010 - Mar 2012</span> <br>
+            <p style="display:inline-block;margin-left:25px">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="exp3">
+            <img style="display:inline-block;margin-left: 17px;margin-top:17px" src="./favicon/icons8-star-50.png" alt="" width="38px" height="38px">
+            <span style="display:inline-block;margin-left:10px;font-size:38px">Education</span> <br>
+            <span style="display:inline-block;margin-left:30px;font-size:20px;margin-bottom:20px;
+            margin-top:30px">W3Schools.com</span> <br>
+            <img style="display:inline-block;margin-left: 17px;margin-top:0px" src="./favicon/icons8-business-64.png" alt="" width="20px" height="20px">
+            <span style="display:inline-block;margin-left:10px;font-size:20px;color:#12B886">Forever</span> <br>
+            <p style="display:inline-block;margin-left:25px">Web Development! All I need to know in one place</p>
+            <hr style="width: 95%;">
+            <span style="display:inline-block;margin-left:30px;font-size:20px;margin-bottom:20px;
+            margin-top:30px">London Business School</span> <br>
+            <img style="display:inline-block;margin-left: 17px;margin-top:0px" src="./favicon/icons8-business-64.png" alt="" width="20px" height="20px">
+            <span style="display:inline-block;margin-left:10px;font-size:20px;color:#12B886">2013 - 2015</span> <br>
+            <p style="display:inline-block;margin-left:25px">Master Degree</p>
+            <hr style="width: 95%;">
+            <span style="display:inline-block;margin-left:30px;font-size:20px;margin-bottom:20px;
+            margin-top:30px">School of Coding</span> <br>
+            <img style="display:inline-block;margin-left: 17px;margin-top:0px" src="./favicon/icons8-business-64.png" alt="" width="20px" height="20px">
+            <span style="display:inline-block;margin-left:10px;font-size:20px;color:#12B886">2010 - 2013</span> <br>
+            <p style="display:inline-block;margin-left:25px">Bachelor Degree</p>
+        </div>
+    </div>
+    <div class="foot">
+        <div class="foot1">
+            <p>Find me on social media.</p>
+            <img id="dis2" src="./favicon/icons8-facebook-50.png" alt="" height="15px" width="15px">
+            <img id="dis2" src="./favicon/icons8-instagram-50.png" alt="" height="15px" width="15px">
+            <img id="dis2" src="./favicon/icons8-snapchat-50.png" alt="" height="15px" width="15px">
+            <img id="dis2" src="./favicon/icons8-pinterest-48.png" alt="" height="15px" width="15px">
+            <img id="dis2" src="./favicon/icons8-twitter-50.png" alt="" height="15px" width="15px">
+            <img id="dis2" src="./favicon/icons8-linkedin-30.png" alt="" height="15px" width="15px"><br><br>
+            <span>Powered by w3.css</span>
+        </div>
+    </div>
+</body>
+</html>
